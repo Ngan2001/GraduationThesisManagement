@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.gtm.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.gtm.pojo.News</class>
+    <class>com.gtm.pojo.SchoolYear</class>
+    <class>com.gtm.pojo.EvaluationMethod</class>
+    <class>com.gtm.pojo.Thesis</class>
+    <class>com.gtm.pojo.User</class>
+    <class>com.gtm.pojo.CouncilDetail</class>
+    <class>com.gtm.pojo.Role</class>
+    <class>com.gtm.pojo.Student</class>
+    <class>com.gtm.pojo.NotificationUser</class>
+    <class>com.gtm.pojo.ScoreComponent</class>
+    <class>com.gtm.pojo.Manage</class>
+    <class>com.gtm.pojo.Topic</class>
+    <class>com.gtm.pojo.Department</class>
+    <class>com.gtm.pojo.Lecturer</class>
+    <class>com.gtm.pojo.Council</class>
+    <class>com.gtm.pojo.Position</class>
+    <class>com.gtm.pojo.ScoreDetail</class>
+    <class>com.gtm.pojo.Notification</class>
+    <class>com.gtm.pojo.Score</class>
+    <class>com.gtm.pojo.Major</class>
+    <class>com.gtm.pojo.ScoreColumn</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/graduation_thesis_management_sys_db?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="123456789"/>
+    </properties>
+  </persistence-unit>
+</persistence>
